@@ -1,1 +1,91 @@
+You must generate a detailed architecture with at least the following modules:
+MODULE 1: Intake & Setup
+
+Normalize section names.
+
+Identify missing, empty, or too-short (<50 words) sections.
+
+Enforce PS2 inputs: “Academic papers, Individual sections”.
+
+Record section order constraints.
+
+MODULE 2: Section Loop
+
+For each section:
+
+Extract text → check length → summarize.
+
+Enforce consistency of language (PS2 constraint).
+
+Validate the summary obeys ≤250-word global constraint.
+
+No invented content.
+
+MODULE 3: Guardrails
+
+Must include:
+
+Missing/empty section detector
+
+<50-word short-section flag
+
+Anti-hallucination filter
+
+“Do not fabricate absent sections or claims.”
+
+Long-paper chunking strategy
+
+Break paper into chunks that fit context window
+
+Summarize chunks → then merge
+
+MODULE 4: Rendering & Refinement
+
+Build all required displays:
+
+Paper summary
+
+Section table
+
+Expert summary
+
+Lay summary
+
+Mini-glossary
+
+Checks & warnings
+
+Ensure formatting consistency.
+
+3. TWO ADDITIONAL CUSTOM MODULES
+
+You must add two new student-created modules.
+
+EXTRA MODULE A: Key Contributions Extractor
+
+Identify 3–7 core contributions from across the paper.
+
+Provide one sentence per contribution.
+
+No hallucination; only extract what is explicitly present.
+
+EXTRA MODULE B: Equation & Model Explainer
+
+Detect any equations or formal models in the paper.
+
+Rewrite them in short plain-language explanations.
+
+Provide variable-meaning table if applicable.
+Your Output Should Contain
+
+Your final answer must include two deliverables:
+
+Deliverable 1 → The Full System Prompt
+
+A complete, polished system prompt ready to be used as a standalone system message in markdown format
+
+Deliverable 2 → The Multi-Module Architecture Specification
+
+A structured document describing each module and how they interact.
+
 
