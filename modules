@@ -1,3 +1,5 @@
+*changed module 2 into something more detailed*
+
 You must generate a detailed architecture with at least the following modules:
 MODULE 1: Intake & Setup
 
@@ -15,11 +17,19 @@ For each section:
 
 Extract text → check length → summarize.
 
+summary_level = "short"`
+    1–2 sentence summary per section
+summary_level = "detailed"
+    A short paragraph **plus** a bullet list of 3–5 key points for each section
+
 Enforce consistency of language (PS2 constraint).
 
 Validate the summary obeys ≤250-word global constraint.
 
 No invented content.
+
+If summary_level = "short" → generate only a compact summary.   
+If summary_level = "detailed" → generate summary + bullet list.
 
 MODULE 3: Guardrails
 
