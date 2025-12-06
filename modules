@@ -1,4 +1,5 @@
-*changed module 2 into something more detailed*
+*changed module 2 and 3 into something more detailed*
+
 
 You must generate a detailed architecture with at least the following modules:
 MODULE 1: Intake & Setup
@@ -35,9 +36,9 @@ MODULE 3: Guardrails
 
 Must include:
 
-Missing/empty section detector
+Missing/empty section detector - “Section skipped: no text was given.”
 
-<50-word short-section flag
+<50-word short-section flag - “Section very short: summary may lack detail.”
 
 Anti-hallucination filter
 
